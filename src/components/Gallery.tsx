@@ -7,14 +7,14 @@ interface GalleryImage {
   alt: string;
 }
 
-// Dummy images - replace with actual images
+// Placeholder images - let's fill these together!
 const images: GalleryImage[] = [
-  { id: 1, src: 'https://via.placeholder.com/400x300/FFCFEF/222222?text=Image+1', alt: 'Gallery Image 1' },
-  { id: 2, src: 'https://via.placeholder.com/400x300/C6E6FF/222222?text=Image+2', alt: 'Gallery Image 2' },
-  { id: 3, src: 'https://via.placeholder.com/400x300/FFF6D6/222222?text=Image+3', alt: 'Gallery Image 3' },
-  { id: 4, src: 'https://via.placeholder.com/400x300/FFCFEF/222222?text=Image+4', alt: 'Gallery Image 4' },
-  { id: 5, src: 'https://via.placeholder.com/400x300/C6E6FF/222222?text=Image+5', alt: 'Gallery Image 5' },
-  { id: 6, src: 'https://via.placeholder.com/400x300/FFF6D6/222222?text=Image+6', alt: 'Gallery Image 6' },
+  { id: 1, src: '', alt: '📸' },
+  { id: 2, src: '', alt: '🌼' },
+  { id: 3, src: '', alt: '🍂' },
+  { id: 4, src: '', alt: '🎨' },
+  { id: 5, src: '', alt: '✨' },
+  { id: 6, src: '', alt: '💝' },
 ];
 
 export const Gallery: React.FC = () => {
@@ -22,28 +22,37 @@ export const Gallery: React.FC = () => {
 
   return (
     <section className="max-w-6xl mx-auto animate-slide-up">
-      <div className="flex items-center justify-center gap-2 mb-8">
-        <ImageIcon className="w-6 h-6 text-pink-500" />
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-text-primary text-center">
-          갤러리
-        </h2>
+      <div className="text-center mb-8">
+        <div className="flex items-center justify-center gap-2 mb-3">
+          <ImageIcon className="w-6 h-6 text-pink-500" />
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-text-primary">
+            갤러리
+          </h2>
+        </div>
+        <p className="text-gray-600">
+          이 사진들을 같이 채워나가 보아요 📸
+        </p>
       </div>
 
       {/* Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((image, index) => (
-          <button
+          <div
             key={image.id}
-            onClick={() => setSelectedImage(image)}
-            className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:scale-105 animate-slide-up"
+            className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-md bg-gradient-to-br from-pink-pastel via-cream-pastel to-sky-pastel flex items-center justify-center animate-slide-up"
             style={{ animationDelay: `${index * 50}ms` }}
           >
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="w-full h-full object-cover"
-            />
-          </button>
+            <div className="text-center">
+              <div className="text-5xl md:text-6xl mb-2 opacity-60">
+                {image.alt.includes('📸') ? '📸' :
+                 image.alt.includes('🌼') ? '🌼' :
+                 image.alt.includes('🍂') ? '🍂' :
+                 image.alt.includes('🎨') ? '🎨' :
+                 image.alt.includes('✨') ? '✨' : '💝'}
+              </div>
+              <p className="text-sm text-gray-500 px-4">곧 채워질 추억</p>
+            </div>
+          </div>
         ))}
       </div>
 

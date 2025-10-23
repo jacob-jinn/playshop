@@ -4,30 +4,33 @@ import { Accordion } from './Accordion';
 import { Info } from 'lucide-react';
 
 const scheduleItems = [
-  { time: '14:00', title: '입장 및 환영', description: '웰컴 드링크' },
-  { time: '14:30', title: '오프닝', description: '행사 소개' },
-  { time: '15:00', title: '워크샵', description: '메인 세션' },
-  { time: '16:30', title: '휴식', description: '티타임' },
-  { time: '17:00', title: '네트워킹', description: '교류 시간' },
-  { time: '18:00', title: '마무리', description: '폐회' },
+  { time: '10:00', title: '🏢 회사 집결', description: '' },
+  { time: '10:00~10:50', title: '🍳 비앙또아 브런치', description: '' },
+  { time: '11:00~11:30', title: '🚗 의왕 레일바이크로 이동', description: '' },
+  { time: '11:30~12:40', title: '🚲 의왕 레일 바이크 + 사진미션', description: '' },
+  { time: '12:40~13:30', title: '☕ 카페 (카페막시 왕송호수점)', description: '' },
+  { time: '13:30~14:00', title: '🚗 글램핑장으로 이동', description: '' },
+  { time: '14:00~15:00', title: '🏸 글램핑장 베드민턴', description: '' },
+  { time: '15:00~16:30', title: '🍖 글램핑장 바베큐!', description: '' },
+  { time: '16:30~17:00', title: '🏢 판교역으로 이동', description: '' },
 ];
 
 const faqItems = [
   {
-    title: '주차는 어떻게 하나요?',
-    content: '알파돔시티 건물 지하 주차장을 이용하실 수 있습니다. 주차권은 행사장 접수처에서 받으실 수 있어요.',
+    title: '사진미션은 어떻게 하나요?',
+    content: '레일바이크 타는 동안 4명이 함께 찍은 사진을 촬영해서 팀 단톡방에 인증해주시면 됩니다! 자세한 미션 내용과 채점 방식은 당일에 공지될 예정이에요 📸',
   },
   {
     title: '복장은 어떻게 해야 하나요?',
-    content: '편안한 캐주얼 복장으로 오시면 됩니다. 워크샵 활동이 있으니 활동하기 편한 옷을 추천드려요!',
+    content: '편안한 캐주얼 복장으로 오시면 됩니다. 베드민턴과 야외 활동이 있으니 활동하기 편한 옷차림을 추천드려요!',
   },
   {
     title: '준비물이 필요한가요?',
-    content: '특별한 준비물은 없습니다. 필기구와 노트북은 필요하신 분만 개인적으로 준비해주세요.',
+    content: '특별한 준비물은 없습니다! 편안한 신발과 가을 날씨에 맞는 겉옷 정도만 챙겨주세요.',
   },
   {
-    title: '동반 인원도 참석 가능한가요?',
-    content: '네, 가능합니다! RSVP 신청 시 동반 인원 수를 함께 입력해주시면 됩니다. (최대 5명)',
+    title: '베드민턴 경기는 필수인가요?',
+    content: '네! 다같이 조를 나눠 참여합니다 😊 자세한 경기 방식은 당일에 공지될 예정이에요.',
   },
 ];
 
@@ -47,18 +50,24 @@ export const DetailsSection: React.FC = () => {
         </div>
       </div>
 
-      {/* Dress Code & Tips */}
-      <div className="grid md:grid-cols-2 gap-6 animate-slide-up animate-delay-100">
-        <div className="bg-gradient-to-br from-cream-pastel to-yellow-50 rounded-2xl p-6 shadow-md">
-          <h3 className="text-xl font-serif font-bold text-text-primary mb-3">드레스 코드</h3>
+      {/* Activities */}
+      <div className="grid md:grid-cols-3 gap-6 animate-slide-up animate-delay-100">
+        <div className="bg-gradient-to-br from-pink-pastel to-pink-50 rounded-2xl p-6 shadow-md">
+          <h3 className="text-xl font-serif font-bold text-text-primary mb-3">📸 사진미션</h3>
           <p className="text-gray-700 leading-relaxed">
-            편안한 캐주얼 복장을 권장해요. 워크샵 활동을 고려하여 움직이기 편한 옷차림을 추천드립니다!
+            4명이 함께 찍은 사진 촬영 후 단톡방에 인증! 자세한 내용은 당일 공지.
           </p>
         </div>
         <div className="bg-gradient-to-br from-sky-pastel to-blue-50 rounded-2xl p-6 shadow-md">
-          <h3 className="text-xl font-serif font-bold text-text-primary mb-3">준비물</h3>
+          <h3 className="text-xl font-serif font-bold text-text-primary mb-3">🏸 베드민턴</h3>
           <p className="text-gray-700 leading-relaxed">
-            모든 자료는 현장에서 제공됩니다. 필요하신 분은 개인 노트북과 필기구를 지참해주세요.
+            다같이 조를 나눠 참여하며, 팀 대항 친선전을 펼칩니다! 자세한 내용은 당일 공지.
+          </p>
+        </div>
+        <div className="bg-gradient-to-br from-cream-pastel to-yellow-50 rounded-2xl p-6 shadow-md">
+          <h3 className="text-xl font-serif font-bold text-text-primary mb-3">🍖 바베큐</h3>
+          <p className="text-gray-700 leading-relaxed">
+            고기 + 음료와 함께 맛있는 시간을 함께해요!
           </p>
         </div>
       </div>

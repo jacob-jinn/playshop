@@ -7,13 +7,13 @@ export const IntroSection: React.FC = () => {
       {/* Intro Text */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-text-primary mb-6">
-          따뜻한 마음을 담아 초대합니다
+          따뜻한 마음을 담아 초대합니다 💝
         </h2>
         <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto">
-          언제나 함께 성장하고 즐거움을 나누는 우리 팀이<br />
-          특별한 PlayShop을 준비했습니다.<br />
-          소중한 시간을 함께 하며 새로운 경험과 영감을 나눌 수 있는<br />
-          뜻깊은 자리에 여러분을 초대합니다.
+          바쁜 일상 속에서도 웃음을 잃지 않는 우리.<br />
+          이번엔 잠시 업무를 내려놓고,<br />
+          함께 웃고, 놀고, 맛있는 시간을 보내요.<br />
+          교환권선포비팀이 준비한 가을 소풍에 초대합니다!
         </p>
       </div>
 
