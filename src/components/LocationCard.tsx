@@ -6,15 +6,15 @@ export const LocationCard: React.FC = () => {
   const [selectedMap2, setSelectedMap2] = useState<'kakao' | 'google' | 'naver'>('kakao');
 
   const location1Links = {
-    kakao: 'https://map.kakao.com/?q=경기+의왕시+왕송못로+209',
-    google: 'https://maps.google.com/?q=경기+의왕시+왕송못로+209',
-    naver: 'https://map.naver.com/p/search/경기+의왕시+왕송못로+209',
+    kakao: 'https://map.kakao.com/?q=경기+의왕시+월암동+577-4',
+    google: 'https://maps.google.com/?q=경기+의왕시+월암동+577-4',
+    naver: 'https://map.naver.com/p/search/경기+의왕시+월암동+577-4',
   };
 
   const location2Links = {
-    kakao: 'https://map.kakao.com/?q=경기+의왕시+왕송못동길+64',
-    google: 'https://maps.google.com/?q=경기+의왕시+왕송못동길+64',
-    naver: 'https://map.naver.com/p/search/경기+의왕시+왕송못동길+64',
+    kakao: 'https://map.kakao.com/?q=경기+의왕시+오매기백운산길+54-11',
+    google: 'https://maps.google.com/?q=경기+의왕시+오매기백운산길+54-11',
+    naver: 'https://map.naver.com/p/search/경기+의왕시+오매기백운산길+54-11',
   };
 
   return (
@@ -40,7 +40,7 @@ export const LocationCard: React.FC = () => {
             의왕 레일바이크
           </h3>
           <p className="text-gray-600 mb-6">
-            경기 의왕시 왕송못로 209
+            경기 의왕시 월암동 577-4
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">
@@ -83,7 +83,7 @@ export const LocationCard: React.FC = () => {
             오매기744 글램핑장
           </h3>
           <p className="text-gray-600 mb-6">
-            경기 의왕시 왕송못동길 64
+            경기 의왕시 오매기백운산길 54-11
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">
