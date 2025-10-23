@@ -22,8 +22,10 @@ export default {
         },
       },
       fontFamily: {
+        serifTitle: ['"DM Serif Display"', 'serif'],
+        sansBody: ['"Inter"', '"Noto Sans KR"', 'sans-serif'],
         serif: ['"DM Serif Display"', 'serif'],
-        sans: ['Inter', 'sans-serif'],
+        sans: ['"Inter"', '"Noto Sans KR"', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in',

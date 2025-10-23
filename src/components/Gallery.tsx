@@ -25,11 +25,11 @@ export const Gallery: React.FC = () => {
       <div className="text-center mb-8">
         <div className="flex items-center justify-center gap-2 mb-3">
           <ImageIcon className="w-6 h-6 text-pink-500" />
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-text-primary">
+          <h2 className="text-3xl md:text-4xl font-serifTitle font-bold text-text-primary">
             갤러리
           </h2>
         </div>
-        <p className="text-gray-600">
+        <p className="text-gray-600 font-sansBody">
           이 사진들을 같이 채워나가 보아요 📸
         </p>
       </div>

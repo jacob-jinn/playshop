@@ -21,7 +21,7 @@ export const LocationCard: React.FC = () => {
     <section className="max-w-5xl mx-auto animate-slide-up space-y-8">
       <div className="flex items-center justify-center gap-2 mb-8">
         <MapPin className="w-6 h-6 text-pink-500" />
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-text-primary text-center">
+        <h2 className="text-3xl md:text-4xl font-serifTitle font-bold text-text-primary text-center">
           주요 방문지
         </h2>
       </div>
@@ -36,10 +36,10 @@ export const LocationCard: React.FC = () => {
         </div>
 
         <div className="p-8">
-          <h3 className="text-2xl font-serif font-bold text-text-primary mb-2">
+          <h3 className="text-2xl font-serifTitle font-bold text-text-primary mb-2">
             의왕 레일바이크
           </h3>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 font-sansBody mb-6">
             경기 의왕시 월암동 577-4
           </p>
 
@@ -79,10 +79,10 @@ export const LocationCard: React.FC = () => {
         </div>
 
         <div className="p-8">
-          <h3 className="text-2xl font-serif font-bold text-text-primary mb-2">
+          <h3 className="text-2xl font-serifTitle font-bold text-text-primary mb-2">
             오매기744 글램핑장
           </h3>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 font-sansBody mb-6">
             경기 의왕시 오매기백운산길 54-11
           </p>
 

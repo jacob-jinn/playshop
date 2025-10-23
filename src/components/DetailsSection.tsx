@@ -42,7 +42,7 @@ export const DetailsSection: React.FC = () => {
       <div className="animate-slide-up">
         <div className="flex items-center justify-center gap-2 mb-8">
           <Info className="w-6 h-6 text-pink-500" />
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-text-primary text-center">
+          <h2 className="text-3xl md:text-4xl font-serifTitle font-bold text-text-primary text-center">
             일정 안내
           </h2>
         </div>
@@ -54,20 +54,20 @@ export const DetailsSection: React.FC = () => {
       {/* Activities */}
       <div className="grid md:grid-cols-3 gap-6 animate-slide-up animate-delay-100">
         <div className="bg-gradient-to-br from-pink-pastel to-pink-50 rounded-2xl p-6 shadow-md">
-          <h3 className="text-xl font-serif font-bold text-text-primary mb-3">📸 사진미션</h3>
-          <p className="text-gray-700 leading-relaxed">
+          <h3 className="text-xl font-serifTitle font-bold text-text-primary mb-3">📸 사진미션</h3>
+          <p className="text-gray-700 font-sansBody leading-relaxed">
             4명이 함께 찍은 사진 촬영 후 단톡방에 인증! 자세한 내용은 당일 공지.
           </p>
         </div>
         <div className="bg-gradient-to-br from-sky-pastel to-blue-50 rounded-2xl p-6 shadow-md">
-          <h3 className="text-xl font-serif font-bold text-text-primary mb-3">🏸 베드민턴</h3>
-          <p className="text-gray-700 leading-relaxed">
+          <h3 className="text-xl font-serifTitle font-bold text-text-primary mb-3">🏸 베드민턴</h3>
+          <p className="text-gray-700 font-sansBody leading-relaxed">
             다같이 조를 나눠 참여하며, 팀 대항 친선전을 펼칩니다! 자세한 내용은 당일 공지.
           </p>
         </div>
         <div className="bg-gradient-to-br from-cream-pastel to-yellow-50 rounded-2xl p-6 shadow-md overflow-hidden">
-          <h3 className="text-xl font-serif font-bold text-text-primary mb-3">🍖 바베큐</h3>
-          <p className="text-gray-700 leading-relaxed mb-3">
+          <h3 className="text-xl font-serifTitle font-bold text-text-primary mb-3">🍖 바베큐</h3>
+          <p className="text-gray-700 font-sansBody leading-relaxed mb-3">
             고기 + 음료와 함께 맛있는 시간을 함께해요!
           </p>
           <img
@@ -80,7 +80,7 @@ export const DetailsSection: React.FC = () => {
 
       {/* FAQ */}
       <div className="animate-slide-up animate-delay-200">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-text-primary text-center mb-8">
+        <h2 className="text-3xl md:text-4xl font-serifTitle font-bold text-text-primary text-center mb-8">
           자주 묻는 질문
         </h2>
         <Accordion items={faqItems} />

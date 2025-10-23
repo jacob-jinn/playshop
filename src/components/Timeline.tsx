@@ -25,7 +25,7 @@ export const Timeline: React.FC<TimelineProps> = ({ items }) => {
         >
           {/* Time */}
           <div className="flex-shrink-0 w-20 md:w-32 text-right">
-            <p className="text-xs md:text-sm font-semibold text-pink-500">{item.time}</p>
+            <p className="text-xs md:text-sm font-semibold font-sansBody text-pink-500">{item.time}</p>
           </div>
 
           {/* Icon */}
@@ -35,9 +35,9 @@ export const Timeline: React.FC<TimelineProps> = ({ items }) => {
 
           {/* Content */}
           <div className="flex-1">
-            <h4 className="font-semibold text-text-primary text-sm md:text-lg">{item.title}</h4>
+            <h4 className="font-semibold font-sansBody text-text-primary text-sm md:text-lg">{item.title}</h4>
             {item.description && (
-              <p className="text-xs md:text-sm text-gray-600 mt-1">{item.description}</p>
+              <p className="text-xs md:text-sm font-sansBody text-gray-600 mt-1">{item.description}</p>
             )}
           </div>
         </div>

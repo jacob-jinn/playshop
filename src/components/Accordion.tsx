@@ -30,7 +30,7 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
             className="w-full px-6 py-4 flex items-center justify-between text-left transition-colors hover:bg-gray-50"
             aria-expanded={openIndex === index}
           >
-            <span className="font-medium text-text-primary">{item.title}</span>
+            <span className="font-medium font-sansBody text-text-primary">{item.title}</span>
             <ChevronDown
               className={`w-5 h-5 text-gray-500 transition-transform ${
                 openIndex === index ? 'transform rotate-180' : ''
@@ -44,7 +44,7 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
               openIndex === index ? 'max-h-96' : 'max-h-0'
             }`}
           >
-            <div className="px-6 pb-4 text-gray-600 text-sm leading-relaxed">
+            <div className="px-6 pb-4 text-gray-600 font-sansBody text-sm leading-relaxed">
               {item.content}
             </div>
           </div>

@@ -23,22 +23,22 @@ export const HeroCard: React.FC<HeroCardProps> = ({ onRSVPClick }) => {
           <Sparkles className="w-8 h-8 text-pink-500" />
         </div>
 
-        <h1 className="text-4xl md:text-6xl font-serif font-bold text-text-primary mb-4">
+        <h1 className="text-4xl md:text-6xl font-serifTitle font-bold text-text-primary mb-4">
           교환권선포비팀 PlayShop 2025 하반기 🍂
         </h1>
 
-        <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl font-sansBody text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
           가을 햇살 아래, 우리 함께 떠나요 🌼
         </p>
 
         {/* Event Info */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-          <div className="flex items-center gap-2 text-gray-700">
+          <div className="flex items-center gap-2 text-gray-700 font-sansBody">
             <Calendar className="w-5 h-5 text-pink-500" />
             <span className="font-medium">2025.10.30 (목)</span>
           </div>
           <div className="hidden sm:block w-1 h-1 rounded-full bg-gray-400" />
-          <div className="flex items-center gap-2 text-gray-700">
+          <div className="flex items-center gap-2 text-gray-700 font-sansBody">
             <MapPin className="w-5 h-5 text-sky-500" />
             <span className="font-medium">의왕 레일바이크 & 오매기 744 글램핑장</span>
           </div>
@@ -47,7 +47,7 @@ export const HeroCard: React.FC<HeroCardProps> = ({ onRSVPClick }) => {
         {/* CTA Button */}
         <button
           onClick={onRSVPClick}
-          className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-pink-400 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95"
+          className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-pink-400 text-white font-sansBody font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95"
         >
           <span>초대 수락하기 💌</span>
           <Sparkles className="w-5 h-5" />
