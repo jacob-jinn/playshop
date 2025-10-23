@@ -7,11 +7,11 @@ export const ActionBar: React.FC = () => {
   const [shareSuccess, setShareSuccess] = useState(false);
 
   const eventData = {
-    title: 'Kakao PlayShop 2025',
-    description: '카카오 플레이샵 2025 행사에 여러분을 초대합니다.',
-    location: '판교 알파돔시티 ○○홀',
-    startTime: new Date('2025-11-15T14:00:00+09:00'),
-    endTime: new Date('2025-11-15T18:00:00+09:00'),
+    title: '교환권선포비팀 PlayShop 2025 하반기',
+    description: '가을 햇살 아래, 우리 함께 떠나요 🌼 의왕 레일바이크 & 오매기 744 글램핑장',
+    location: '판교 비앙또아 (집결)',
+    startTime: new Date('2025-10-30T10:00:00+09:00'),
+    endTime: new Date('2025-10-30T17:00:00+09:00'),
   };
 
   const handleAddToCalendar = () => {
