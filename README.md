@@ -1,4 +1,4 @@
-# Kakao PlayShop 2025 초대장
+# 교환권선포비팀 PlayShop 2025 초대장
 
 회사 플레이샵 초대장 웹사이트 템플릿입니다. 결혼식 청첩장 같은 모던하고 깜찍한 디자인으로 제작되었습니다.
 
@@ -15,6 +15,7 @@
 ## 주요 기능
 
 ### 섹션 구성
+
 - **Hero Card** - 행사명, 날짜/장소, RSVP 버튼
 - **Intro Section** - 초대 메시지 및 Play/Shop 카드
 - **Details Section** - 일정 타임라인, 드레스 코드, FAQ
@@ -24,6 +25,7 @@
 - **Action Bar** - 캘린더 추가, 공유하기
 
 ### 디자인 특징
+
 - 파스텔 컬러 팔레트 (핑크, 하늘색, 크림)
 - 부드러운 애니메이션 (페이드, 슬라이드, 호버 효과)
 - 배경 컨페티 애니메이션
@@ -31,6 +33,7 @@
 - 접근성 고려 (ARIA 레이블, 키보드 포커스)
 
 ### 기능
+
 - ICS 파일 생성 (캘린더 추가)
 - Web Share API (공유하기)
 - 폼 검증 (Zod)
@@ -40,11 +43,13 @@
 ## 설치 및 실행
 
 ### 1. 의존성 설치
+
 ```bash
 npm install
 ```
 
 ### 2. 개발 서버 실행
+
 ```bash
 npm run dev
 ```
@@ -52,11 +57,13 @@ npm run dev
 브라우저에서 http://localhost:5173 열기
 
 ### 3. 프로덕션 빌드
+
 ```bash
 npm run build
 ```
 
 ### 4. 빌드 미리보기
+
 ```bash
 npm run preview
 ```
@@ -100,13 +107,17 @@ playshop/
 ## 커스터마이징
 
 ### 행사 정보 수정
+
 행사 정보는 다음 파일에서 수정할 수 있습니다:
+
 - `src/components/HeroCard.tsx` - 제목, 날짜, 장소
 - `src/components/ActionBar.tsx` - 캘린더 이벤트 정보
 - `src/components/DetailsSection.tsx` - 일정, FAQ
 
 ### 색상 변경
+
 `tailwind.config.ts` 파일에서 커스텀 색상을 수정할 수 있습니다:
+
 ```typescript
 colors: {
   pink: { pastel: '#FFCFEF' },
@@ -116,9 +127,11 @@ colors: {
 ```
 
 ### 갤러리 이미지
+
 `src/components/Gallery.tsx`에서 이미지 배열을 실제 이미지로 교체하세요.
 
 ### 폰트 변경
+
 `index.html`에서 Google Fonts 링크를 변경하고, `tailwind.config.ts`에서 fontFamily를 업데이트하세요.
 
 ## 반응형 브레이크포인트
