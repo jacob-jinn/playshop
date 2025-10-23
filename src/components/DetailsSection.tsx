@@ -5,8 +5,7 @@ import { Info } from 'lucide-react';
 import glamping2 from '../asset/glamping2.jpg';
 
 const scheduleItems = [
-  { time: '10:00', title: '🏢 회사 집결', description: '' },
-  { time: '10:00~10:50', title: '🍳 비앙또아 브런치', description: '' },
+  { time: '10:00~10:50', title: '🍳 비앙또아 브런치', description: '10시까지 모여주세요' },
   { time: '11:00~11:30', title: '🚗 의왕 레일바이크로 이동', description: '' },
   { time: '11:30~12:40', title: '🚲 의왕 레일 바이크 + 사진미션', description: '' },
   { time: '12:40~13:30', title: '☕ 카페 (카페막시 왕송호수점)', description: '' },

@@ -32,7 +32,7 @@ export const HeroCard: React.FC<HeroCardProps> = ({ onRSVPClick }) => {
         </p>
 
         {/* Event Info */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
           <div className="flex items-center gap-2 text-gray-700 font-sansBody">
             <Calendar className="w-5 h-5 text-pink-500" />
             <span className="font-medium">2025.10.30 (목)</span>
@@ -42,6 +42,15 @@ export const HeroCard: React.FC<HeroCardProps> = ({ onRSVPClick }) => {
             <MapPin className="w-5 h-5 text-sky-500" />
             <span className="font-medium">의왕 레일바이크 & 오매기 744 글램핑장</span>
           </div>
+        </div>
+
+        {/* 집결 시간 강조 */}
+        <div className="bg-pink-100 border-2 border-pink-300 rounded-2xl px-6 py-4 mb-8 max-w-md mx-auto">
+          <p className="text-center font-sansBody">
+            <span className="text-pink-600 font-bold text-lg">10:00 판교 비앙또아 집결</span>
+            <br />
+            <span className="text-gray-700 text-sm">늦지 않게 모여주세요!</span>
+          </p>
         </div>
 
         {/* CTA Button */}
