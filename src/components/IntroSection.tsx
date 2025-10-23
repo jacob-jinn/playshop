@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Users } from 'lucide-react';
+import glamping2 from '../asset/glamping2.jpg';
 
 export const IntroSection: React.FC = () => {
   return (
@@ -15,6 +16,11 @@ export const IntroSection: React.FC = () => {
           함께 웃고, 놀고, 맛있는 시간을 보내요.<br />
           교환권선포비팀이 준비한 가을 소풍에 초대합니다!
         </p>
+        <img
+          src={glamping2}
+          alt="가을 글램핑 풍경"
+          className="rounded-2xl shadow-md mt-6 hover:scale-105 transition max-w-md mx-auto md:max-w-lg"
+        />
       </div>
 
       {/* Dual Cards */}

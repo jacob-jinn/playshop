@@ -2,6 +2,7 @@ import React from 'react';
 import { Timeline } from './Timeline';
 import { Accordion } from './Accordion';
 import { Info } from 'lucide-react';
+import glamping2 from '../asset/glamping2.jpg';
 
 const scheduleItems = [
   { time: '10:00', title: '🏢 회사 집결', description: '' },
@@ -64,11 +65,16 @@ export const DetailsSection: React.FC = () => {
             다같이 조를 나눠 참여하며, 팀 대항 친선전을 펼칩니다! 자세한 내용은 당일 공지.
           </p>
         </div>
-        <div className="bg-gradient-to-br from-cream-pastel to-yellow-50 rounded-2xl p-6 shadow-md">
+        <div className="bg-gradient-to-br from-cream-pastel to-yellow-50 rounded-2xl p-6 shadow-md overflow-hidden">
           <h3 className="text-xl font-serif font-bold text-text-primary mb-3">🍖 바베큐</h3>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed mb-3">
             고기 + 음료와 함께 맛있는 시간을 함께해요!
           </p>
+          <img
+            src={glamping2}
+            alt="글램핑장 전경"
+            className="w-full h-24 object-cover rounded-lg shadow-sm mt-2"
+          />
         </div>
       </div>
 

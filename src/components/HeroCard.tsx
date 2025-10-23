@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sparkles, Calendar, MapPin } from 'lucide-react';
+import glamping from '../asset/glamping.jpg';
 
 interface HeroCardProps {
   onRSVPClick: () => void;
@@ -7,14 +8,17 @@ interface HeroCardProps {
 
 export const HeroCard: React.FC<HeroCardProps> = ({ onRSVPClick }) => {
   return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-pink-pastel via-cream-pastel to-sky-pastel rounded-3xl shadow-2xl p-8 md:p-12 text-center animate-fade-in">
+    <div className="relative overflow-hidden rounded-3xl shadow-2xl p-8 md:p-12 text-center animate-fade-in bg-cover bg-center" style={{ backgroundImage: `url(${glamping})` }}>
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/30"></div>
+
       {/* Decorative elements */}
-      <div className="absolute top-4 left-4 text-4xl animate-float">🍂</div>
-      <div className="absolute top-8 right-8 text-3xl animate-float" style={{ animationDelay: '0.5s' }}>🌼</div>
-      <div className="absolute bottom-8 left-12 text-3xl animate-float" style={{ animationDelay: '1s' }}>🍁</div>
+      <div className="absolute top-4 left-4 text-4xl animate-float z-10">🍂</div>
+      <div className="absolute top-8 right-8 text-3xl animate-float z-10" style={{ animationDelay: '0.5s' }}>🌼</div>
+      <div className="absolute bottom-8 left-12 text-3xl animate-float z-10" style={{ animationDelay: '1s' }}>🍁</div>
 
       {/* Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 bg-white/90 backdrop-blur-sm rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
         <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white shadow-lg">
           <Sparkles className="w-8 h-8 text-pink-500" />
         </div>
