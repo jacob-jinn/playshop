@@ -47,6 +47,9 @@ export const DetailsSection: React.FC = () => {
         </div>
         <div className="bg-white rounded-3xl shadow-lg p-8 md:p-12">
           <Timeline items={scheduleItems} />
+          <p className="text-center text-sm font-sansBody text-gray-500 mt-6">
+            * 일정은 상황에 따라 조율될 수 있습니다.
+          </p>
         </div>
       </div>
 
