@@ -168,7 +168,7 @@ MIT License
 
 ## 문의
 
-playshop@kakao.com
+playshop@example.com
 
 ---
 

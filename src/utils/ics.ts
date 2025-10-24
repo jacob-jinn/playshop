@@ -18,7 +18,7 @@ export function generateICS(event: {
   const icsContent = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Kakao PlayShop//Event//KO',
+    'PRODID:-//PlayShop//Event//KO',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     'BEGIN:VEVENT',

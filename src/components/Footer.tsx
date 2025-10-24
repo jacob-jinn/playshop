@@ -18,14 +18,14 @@ export const Footer: React.FC = () => {
         <div className="flex items-center justify-center gap-2 mb-3">
           <Mail className="w-4 h-4 text-white/80" />
           <a
-            href="mailto:jacob.jinn@kakaocorp.com"
+            href="mailto:playshop@example.com"
             className="text-white/90 font-sansBody hover:text-pink-300 transition-colors"
           >
-            jacob.jinn@kakaocorp.com
+            playshop@example.com
           </a>
         </div>
         <p className="text-sm font-sansBody text-white/70">
-          © 2025 Kakao PlayShop. All rights reserved.
+          © 2025 PlayShop. All rights reserved.
         </p>
       </div>
     </footer>
